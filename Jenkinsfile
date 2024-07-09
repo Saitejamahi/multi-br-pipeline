@@ -7,6 +7,7 @@ stages {
                 {
                       
                   sh 'pwd'
+                sh 'ls'
                   }
                }
             stage(' BUILD')
