@@ -16,7 +16,7 @@ stages {
     stage('DEPLoy')
           {
               steps{
-                    sh 'docker container run -dt --name-con -p 90:80 food'
+                    sh 'docker container run -dt --name con -p 90:80 food'
               }
           }
     stage('CODE ANALYSIS-SONARQUBE') {
