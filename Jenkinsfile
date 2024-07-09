@@ -8,6 +8,7 @@ stages {
                       
                   sh 'pwd'
                 sh 'ls'
+                sh 'docker container ls'
                   }
                }
             stage(' BUILD')
