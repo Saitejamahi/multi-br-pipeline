@@ -1,6 +1,19 @@
 pipeline {
 agent any 
 stages {
+    stage('work dir'){
+        steps{
+        sh 'pwd'
+    }
+}
+    stage('Build')
+    {
+        steps
+        {
+            sh 'docker build -t'
+        }
+    }
+    
     stage('CODE ANALYSIS-SONARQUBE') {
         steps {
            sh 'echo sonar analysis completed'
