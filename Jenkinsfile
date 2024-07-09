@@ -13,7 +13,7 @@ stages {
             sh 'docker build -t food .'
         }
     }
-    stage("DEPLoy')
+    stage('DEPLoy')
           {
               steps{
                     sh 'docker container run -dt --name-con -p 90:80 food'
